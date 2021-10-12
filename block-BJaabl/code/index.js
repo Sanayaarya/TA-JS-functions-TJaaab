@@ -56,32 +56,25 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 
-function calc(numA,numB){
- if(typeof numB ==='number' && typeof numB === 'number')
-  return numA + numB ;
-  else{
-    alert("Enter valid input")
-  }
+function calc(numA,numB ,operation){
+ switch(true){
+    case (operation=="add"):
+     return numA +numB;
+     break;
+     case (operation=="sub"):
+     return numA - numB;
+     break;
+     case (operation=="multi"):
+     return numA * numB;
+     break;
+     case (operation=="div"):
+     return numA/numB;
+     break;
+     default:
+       return "operation is not define"
+   
+ }
 }
-calc(10 ,20 )
-
-function calc(numA,numB){
-  if(typeof numB ==='number' && typeof numB === 'number')
-   return numA - numB ;
-   else{
-     alert("Enter valid input")
-   }
- }
- calc(20 , 10 )
-
- function calc(numA,numB){
-  if(typeof numB ==='number' && typeof numB === 'number')
-   return numA * numB ;
-   else{
-     alert("Enter valid input")
-   }
- }
- calc(20 , 10 )
 
 /*
 5. Create a function named `isLeapYear` that accepts a number data type and return `true` or `false` based
