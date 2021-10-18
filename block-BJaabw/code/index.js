@@ -126,6 +126,22 @@ function sum(a ,b) {
 
 }
 
+function sum(val1,val2){
+  if(
+    typeof val1 == "number" &&
+    typeof val2 == "number"
+  ){
+    return val1 + val2;
+  } else if (
+    typeof val1 == "string" &&
+    typeof val2 == "string"
+  ){
+    return val1 + "" + val2;
+  } else{
+    return `Enter Valid Input`
+  }
+}
+
 
 // Function Test
 sum(2, 4); // 4
