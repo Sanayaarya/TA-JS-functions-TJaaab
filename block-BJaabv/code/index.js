@@ -8,8 +8,12 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+ 
+  function calculateDogAge(age,rate) {
+    var dogYears = age*rate;
+    console.log("Your dog is " + dogYears + " years old in dog years!");
+    return dogYear
+
 }
 
 /*
@@ -20,7 +24,9 @@ function calculateDogAge() {
 */
 
 function calculateMoviesToWatch() {
-  // Your code goes here
+  var  movie = 8*12 ;
+  console.log("The number of " + movie + "for rest of the life")
+  return 8*12
 }
 
 /*
@@ -29,9 +35,11 @@ function calculateMoviesToWatch() {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
+function celsiusToFahrenheit(c) {
   // Your code goes here
-}
+    let f =  (c * 9/5) + 32 ;
+     return f
+  }
 
 /*
 4. 🎖Create a function called fahrenheitToCelsius:
@@ -39,8 +47,10 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
+function fahrenheitToCelsius(f) {
   // Your code goes here
+  let c =   f * 5/9 ;
+  return c
 }
 
 /*
@@ -51,8 +61,10 @@ function celsiusToFahrenheit() {
   * [ ] If the value of n is below 0 return "The number below 1 is not allowed"
 */
 
-function pow() {
-  // Your code goes here
+function pow(x,n) {
+ if (n<0 ){
+   return x,y
+ }
 }
 
 // Test
@@ -66,8 +78,8 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
-  // Your code goes here
+function sumOrProductOfN(n,a) {
+  return 
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -92,8 +104,13 @@ function sumOfN() {
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+
+function min(a,b){
+  if(a > b ){
+    return b
+  } else{ 
+    return a
+  }
 }
 
 min(0, 10);
@@ -103,6 +120,7 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  // Your code goes here
+function typeCheck(numOne, numTwo) {
+  return numOne * numTwo
+  
 }
