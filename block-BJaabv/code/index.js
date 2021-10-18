@@ -33,7 +33,7 @@ function calculateMoviesToWatch(age , noOfMovie) {
   * [ ] Convert it to fahrenheit and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit(c) {
+function celsiusToFahrenheit(temp) {
   // Your code goes here
     let fahrenheit =  (temp * 9/5) + 32 ;
      return `${temp}°F is ${fahrenheit}°C`;
@@ -46,9 +46,8 @@ function celsiusToFahrenheit(c) {
 */
 
 function fahrenheitToCelsius(temp) {
-  // Your code goes here
-    // let celsius =  (temp - 32) * 5) / 9;
-     return `${temp}°F is ${celsius}°C`;
+    let celsius =  (temp - 32) * 5 / 9;
+     return `${temp}°C is ${celsius}°F`;
   }
 
 /*
